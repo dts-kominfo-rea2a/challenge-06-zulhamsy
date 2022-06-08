@@ -47,8 +47,8 @@ const bacaData = function (callback) {
       return callback(err, null);
     }
     result.push(text[1]);
+    return callback(null, result);
   });
-  return callback(null, result);
 };
 
 // ! JANGAN DIMODIFIKASI
